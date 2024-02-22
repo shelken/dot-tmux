@@ -2,7 +2,7 @@ apt_bool := `which apt | echo $?`
 brew_bool := `which brew | echo $?`
 dnf_bool := `which dnf | echo $?`
 install_statement := if brew_bool == '0' { 
-  "brew install tmux yazi jq unar poppler fd ffmpegthumbnailer"
+  "brew install neovim lazygit tmux yazi jq unar poppler fd ffmpegthumbnailer"
 } else if apt_bool == '0' {
   "apt-get install -y tmux yazi jq fd-find"
 } else if dnf_bool == '0' {
