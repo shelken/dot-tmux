@@ -1,4 +1,4 @@
-
+set dotenv-load
 install:
   #!/usr/bin/env bash
   if which brew > /dev/null 2>&1; then
@@ -15,3 +15,6 @@ install:
 init: install 
   -git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
   ln -f .tmux.conf ~/.tmux.conf
+
+tf *args:
+  @~/.tmux/plugins/tmuxifier/bin/tmuxifier {{args}}
