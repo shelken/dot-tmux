@@ -27,7 +27,7 @@ jobs:
         with:
           owner: shelken
           repo: dotfiles.nix
-          github_token: ${{ secrets.GITHUB_PERSONAL_ACCESS_TOKEN }}
+          github_token: ${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}
           # github_user: github-user
           workflow_file_name: sync-upstream.yml
           ref: main
@@ -41,7 +41,7 @@ jobs:
         with:
           owner: shelken
           repo: my-nix-flake
-          github_token: ${{ secrets.GITHUB_PERSONAL_ACCESS_TOKEN }}
+          github_token: ${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}
           # github_user: github-user
           workflow_file_name: sync-upstream.yml
           ref: main
