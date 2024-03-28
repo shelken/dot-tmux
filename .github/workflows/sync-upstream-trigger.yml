@@ -39,17 +39,17 @@ jobs:
           propagate_failure: true
           trigger_workflow: true
           wait_workflow: true
-      - uses: convictional/trigger-workflow-and-wait@v1.6.5
-        name: sync my-nix-flake
-        with:
-          owner: shelken
-          repo: my-nix-flake
-          github_token: ${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}
-          # github_user: github-user
-          workflow_file_name: sync-upstream.yml
-          ref: main
-          wait_interval: 10
-          client_payload: '{"input": "dotfiles" }'
-          propagate_failure: true
-          trigger_workflow: true
-          wait_workflow: true
+      # - uses: convictional/trigger-workflow-and-wait@v1.6.5
+      #   name: sync my-nix-flake
+      #   with:
+      #     owner: shelken
+      #     repo: my-nix-flake
+      #     github_token: ${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}
+      #     # github_user: github-user
+      #     workflow_file_name: sync-upstream.yml
+      #     ref: main
+      #     wait_interval: 10
+      #     client_payload: '{"input": "dotfiles" }'
+      #     propagate_failure: true
+      #     trigger_workflow: true
+      #     wait_workflow: true
