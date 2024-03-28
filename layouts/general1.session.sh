@@ -29,5 +29,5 @@ if initialize_session "general1"; then
 
 fi
 
-# Finalize session creation and switch/attach to it.
+# Finalize session creation and switch/attach to it. 
 finalize_and_go_to_session
